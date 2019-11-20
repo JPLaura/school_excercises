@@ -16,5 +16,6 @@ cars = {
     }
 }
 
-x = cars.get("car1", {}).get("brand")
-print(x)
+for tag, g in cars.items():
+    if g["year"] == "2009":
+        print(g["name"])
